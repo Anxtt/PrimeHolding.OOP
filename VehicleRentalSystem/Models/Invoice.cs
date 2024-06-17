@@ -4,7 +4,7 @@ using VehicleRentalSystem.Contracts;
 namespace VehicleRentalSystem.Models
 {
     public class Invoice<TVehicle> : IInvoice<TVehicle>
-        where TVehicle : IVehicle
+        where TVehicle : Vehicle, IVehicle
     {
         private readonly int elapsedDays;
 

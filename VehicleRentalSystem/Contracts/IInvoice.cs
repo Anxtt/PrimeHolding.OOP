@@ -1,7 +1,9 @@
-﻿namespace VehicleRentalSystem.Contracts
+﻿using VehicleRentalSystem.Models;
+
+namespace VehicleRentalSystem.Contracts
 {
     public interface IInvoice<TVehicle>
-        where TVehicle : IVehicle
+        where TVehicle : Vehicle, IVehicle
     {
         string FirstName { get; }
 

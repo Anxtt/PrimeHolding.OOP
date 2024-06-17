@@ -2,7 +2,7 @@
 
 namespace VehicleRentalSystem.Models
 {
-    public abstract class Vehicle : IVehicle
+    public abstract class Vehicle : IVehicle, ICalculator
     {
         private readonly string brand;
         private readonly string model;
